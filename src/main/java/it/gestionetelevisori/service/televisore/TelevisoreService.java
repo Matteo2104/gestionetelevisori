@@ -18,4 +18,6 @@ public interface TelevisoreService {
 	public List<Televisore> listAll();
 
 	public int rimuovi(Televisore televisore);
+
+	public int aggiorna(Televisore televisore);
 }

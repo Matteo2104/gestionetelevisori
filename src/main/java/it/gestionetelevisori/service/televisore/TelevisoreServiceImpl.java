@@ -38,4 +38,9 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 	public int rimuovi(Televisore televisore) {
 		return televisoreDAO.delete(televisore);
 	}
+	
+	@Override
+	public int aggiorna(Televisore televisore) {
+		return televisoreDAO.update(televisore);
+	}
 }
