@@ -12,4 +12,8 @@ public interface TelevisoreService {
 	public List<Televisore> trovaDaEsempio(Televisore televisore);
 
 	public Televisore trovaDaId(Long id);
+
+	public int inserisciNuovo(Televisore televisore);
+
+	public List<Televisore> listAll();
 }
