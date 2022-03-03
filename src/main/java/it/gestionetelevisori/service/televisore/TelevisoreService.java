@@ -10,4 +10,6 @@ public interface TelevisoreService {
 	public void setTelevisoreDAO(TelevisoreDAO televisoreDAO);
 
 	public List<Televisore> trovaDaEsempio(Televisore televisore);
+
+	public Televisore trovaDaId(Long id);
 }

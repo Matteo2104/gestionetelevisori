@@ -11,4 +11,5 @@ public interface IBaseDAO<T> {
 	public int update(Televisore input);
 	
 	public List<T> findByExample(Televisore input);
+	public T findById(Long id);
 }

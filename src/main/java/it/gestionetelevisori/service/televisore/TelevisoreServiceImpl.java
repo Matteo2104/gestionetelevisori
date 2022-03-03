@@ -19,4 +19,8 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 		return televisoreDAO.findByExample(televisore);
 	}
 	
+	@Override
+	public Televisore trovaDaId(Long id) {
+		return televisoreDAO.findById(id);
+	}
 }

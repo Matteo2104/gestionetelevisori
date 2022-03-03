@@ -61,5 +61,14 @@ public class TelevisoreDAOImpl implements TelevisoreDAO  {
 		
 		return resultList;
 	}
+	
+	public Televisore findById(Long id) {
+		for (Televisore televisore : DB_Mock.LISTA_TELEVISORI) {
+			if (televisore.getId() == id) {
+				return televisore;
+			}
+		}
+		return null;
+	}
 
 }
