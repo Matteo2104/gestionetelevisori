@@ -16,4 +16,6 @@ public interface TelevisoreService {
 	public int inserisciNuovo(Televisore televisore);
 
 	public List<Televisore> listAll();
+
+	public int rimuovi(Televisore televisore);
 }

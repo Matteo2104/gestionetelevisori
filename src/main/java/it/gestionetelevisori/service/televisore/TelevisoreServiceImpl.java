@@ -33,4 +33,9 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 	public List<Televisore> listAll() {
 		return televisoreDAO.list();
 	}
+	
+	@Override
+	public int rimuovi(Televisore televisore) {
+		return televisoreDAO.delete(televisore);
+	}
 }
