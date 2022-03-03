@@ -4,13 +4,20 @@ public class Televisore {
 	private Long id;
 	private String marca;
 	private String modello;
-	private int prezzo;
-	private int numeroCodici;
+	private Integer prezzo;
+	private Integer numeroCodici;
 	private String codice;
 	
 	public Televisore() {}
-	public Televisore(Long id, String marca, String modello, int prezzo, int numeroCodici, String codice) {
+	public Televisore(Long id, String marca, String modello, Integer prezzo, Integer numeroCodici, String codice) {
 		this.id = id;
+		this.marca = marca;
+		this.modello = modello;
+		this.prezzo = prezzo;
+		this.numeroCodici = numeroCodici;
+		this.codice = codice;
+	}
+	public Televisore(String marca, String modello, int prezzo, int numeroCodici, String codice) {
 		this.marca = marca;
 		this.modello = modello;
 		this.prezzo = prezzo;
@@ -27,10 +34,10 @@ public class Televisore {
 	public String getModello() {
 		return modello;
 	}
-	public int getPrezzo() {
+	public Integer getPrezzo() {
 		return prezzo;
 	}
-	public int getNumeroCodici() {
+	public Integer getNumeroCodici() {
 		return numeroCodici;
 	}
 	public String getCodice() {
@@ -45,10 +52,10 @@ public class Televisore {
 	public void setModello(String modello) {
 		this.modello = modello;
 	}
-	public void setPrezzo(int prezzo) {
+	public void setPrezzo(Integer prezzo) {
 		this.prezzo = prezzo;
 	}
-	public void setNumeroCodici(int numeroCodici) {
+	public void setNumeroCodici(Integer numeroCodici) {
 		this.numeroCodici = numeroCodici;
 	}
 	public void setCodice(String codice) {

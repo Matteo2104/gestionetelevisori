@@ -9,5 +9,6 @@ public interface IBaseDAO<T> {
 	public int insert(Televisore input);
 	public int delete(Televisore input);
 	public int update(Televisore input);
+	
 	public List<T> findByExample(Televisore input);
 }

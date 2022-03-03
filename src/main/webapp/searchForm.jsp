@@ -7,16 +7,31 @@
 <title>Insert title here</title>
 </head>
 <body>
-		Inserire dati da ricercare<br>
+		Inserire dati da ricercare<br><br>
 	<form action="SearchServlet" method="post">
-		<label for="nomeInputId">NOME:</label><br>
-		<input type="text" name="nomeInput" id="nomeInputId">
-		<br>
-		<label for="cognomeInputId">COGNOME:</label><br>
-		<input type="text" name="cognomeInput" id="cognomeInputId">
-		<br><br>
-		<input type="submit" value="CERCA">
 	
+		<label for="marcaInputId">MARCA:</label><br>
+		<input type="text" name="marcaInput" id="marcaInputId">
+		<br>
+		
+		<label for="modelloInputId">MODELLO:</label><br>
+		<input type="text" name="modelloInput" id="modelloInputId">
+		<br>
+		
+		<label for="prezzoInputId">PREZZO:</label><br>
+		<input type="text" name="prezzoInput" id="prezzoInputId">
+		<br>
+		
+		<label for="numeroCodiciInputId">NUMERO CODICI:</label><br>
+		<input type="text" name="numeroCodiciInput" id="numeroCodiciInputId">
+		<br>
+		
+		<label for="codiceInputId">CODICE:</label><br>
+		<input type="text" name="codiceInput" id="codiceInputId">
+		<br><br>
+		
+		<input type="submit" value="CERCA">
+		
 	</form>
 </body>
 </html>

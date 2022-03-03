@@ -3,6 +3,7 @@ package it.gestionetelevisori.service.televisore;
 import java.util.List;
 
 import it.gestionetelevisori.dao.televisore.TelevisoreDAO;
+import it.gestionetelevisori.model.Televisore;
 
 public class TelevisoreServiceImpl implements TelevisoreService {
 
@@ -13,5 +14,9 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 		this.televisoreDAO = televisoreDAO;
 	}
 	
+	@Override
+	public List<Televisore> trovaDaEsempio(Televisore televisore) {
+		return televisoreDAO.findByExample(televisore);
+	}
 	
 }
